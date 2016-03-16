@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Site</title>
+	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/isotope.css">
+	<link href="https://fonts.googleapis.com/css?family=Quando" rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script scr="js/jquery.isotope.min.js" ></script>
+</head>
+<body>
+	<section>
+		<header>
+			<h1>Doctor sit</h1>
+			<h2>Will code for food</h2>
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html" title="Avaleht">Avaleht</a></li>
+					<li><a href="#" title="Teenused">Teenused</a></li>
+					<li><a href="#" title="Hinnakiri">Hinnakiri</a></li>
+					<li><a href="portfoolio.html" title="Portfoolio">Portfoolio</a></li>
+					<li><a href="personal.html" title="Personal">Personal</a></li>
+					<li><a href="kontakt.html" title="Kontakt">Kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+			<div id="content">
+				<h2>Portfolio</h2>
+				<ul id="filters">
+  					<li><a href="#" data-filter="*">Näita kõiki</a></li>
+ 					<li><a href="#" data-filter=".loom">Loom</a></li>
+  					<li><a href="#" data-filter=".asi">Asi</a></li>
+  					<li><a href="#" data-filter=".asi, .loom">Loom ja asi</a></li>
+				 </ul>
+				 <div id="content">
+              <div class="item asi"><img src="http://lorempixel.com/200/200/cats/"></div>
+              <div class="item asi"><img src="http://lorempixel.com/200/200/cats/"></div>
+              <div class="item loom"><img src="http://lorempixel.com/200/200/cats/"></div>
+              <div class="item loom asi"><img src="http://lorempixel.com/200/200/cats/"></div>
+              <div class="item loom"><img src="http://lorempixel.com/200/200/cats/"></div>
+              <div class="item"><img src="http://lorempixel.com/200/200/cats/"></div>
+              <div class="item loom asi"><img src="http://lorempixel.com/200/200/cats/"></div>
+              <div class="item"><img src="http://lorempixel.com/200/200/cats/"></div>
+              <div class="item asi"><img src="http://lorempixel.com/200/200/cats/"></div>
+              <div class="item"><img src="http://lorempixel.com/200/200/cats/"></div>
+            </div>
+
+			
+
+		<footer>
+		<p>+372 555 999 666 | info(at)suvaline.ee | a/a 154132132132132</p>
+		</footer>
+
+	</section>
+	<script>
+        
+        var $content = $('#content');
+   
+        $content.isotope({
+        itemSelector : '.item',
+        layoutMode : 'fitRows',   
+        });
+ 
+        // filtri lingid
+        $('#filters a').click(function(){
+        var selector = $(this).attr('data-filter');
+        $content.isotope({ filter: selector });
+        return false;
+        });
+    </script>
+</body>
+</html>

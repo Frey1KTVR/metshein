@@ -1,0 +1,272 @@
+/*--------------------- 
+1)General
+2)Headings and text
+3)Header tag
+4)Contant
+5)Footer
+6)Teenused
+7)Hinnakiri
+8)portfolio
+9)personal
+10)contact
+11)Media query
+------------------------*/
+/*   -= General  =-     */
+
+section { 
+	max-width:960px;
+	margin: auto;
+	font-family:'Quando', serif;
+}
+section p {
+	color:#937c7c;
+    padding-bottom: 10px;
+    font-size:14px;
+    line-height:18px;
+}
+section h1, h2, h3, h4, h5, h6{
+	color:#666;
+    font-weight:normal;
+}
+    
+section h1 {
+	font-size:24px;
+ 	line-height:32px;
+ 	padding-top:20px
+}
+section h2 {
+	font-size:25px;
+    line-height:30px;
+}
+section h3 {
+	font-size:14px;
+    line-height:22px;
+    font-style: italic;
+}
+
+
+/*   -= Headings and text  =-     */
+body{
+	background-image: url("http://metshein.com/veebitehnoloogia/kohanduvveeb/bg.png");
+}
+
+
+/*   -= Header tag  =-     */
+header {
+	background-color:#333;
+	text-align: center;
+}
+header h1{ 
+	font-size:100px;
+	line-height:120px;
+	color:#fff;
+	padding-top: 80px;
+	letter-spacing: 5px;
+}
+
+header h2 {
+	text-transform:uppercase;
+	font-size: 16px;
+	letter-spacing:6px;
+	font-weight:400;
+	padding-bottom:30px;
+	color: #ccc;
+}
+
+#menu ul li{
+	position: relative; /*Позицинирования обьектов */
+	display: inline-block;  /* Многоцелевое свойство которое определяет, как элемент должен быть показан в документе */
+	max-width: 150px; /* максимальная ширина меню*/
+}
+#menu ul li a {
+	display:block; 
+	font-size: 15px;
+	color: #fff;
+	padding:26px;
+	border-bottom: transparent 3px solid; /* чтобы не прыгала меню */
+	text-decoration: none;
+	margin-bottom: 3px;
+}
+#menu ul li a:hover{
+	color:#666;
+	background-color:#CFC7AD;
+	border-bottom:#E27D6B 3px solid; 
+}
+/*   -= Contant  =-     */
+#content{
+	background-color:#fff;
+	padding: 30px;
+	display: block; /* блок */
+	overflow:hidden;/*переполнения */
+}
+#left{
+	width:70%; 
+	display: block;
+	position: relative;
+	float: left;
+}
+#right {
+	width: 25%;
+	display: block;
+	position:relative;
+	float: right;
+}
+.thumb{
+	width:75px;
+	height: auto;
+	float: left;
+	padding-right:5px;
+}
+.new {
+	 clear:left; /* Устанавливает, с какой стороны элемента запрещено его обтекание другими элементами. */
+	 margin-bottom: 10px;
+	 background-color: #ddd;
+	 display: inline-block;
+	 padding: 5px;
+	 font-size: 12px;
+	 border: 1px solid #aaa;
+	}
+
+.new1 {
+	clear:left;
+	margin-bottom: 10px;
+	background-color: red;
+	display: inline-block;
+
+}
+.new1:hover{
+	color:#666;
+	background-color:#CFC7AD;
+	border-bottom:#E27D6B 3px solid;
+}
+
+.new a{
+	text-decoration: none;
+	color:#666;
+	font-weight: 600;
+}
+
+.kontact{
+	float:left;
+	width:30%;
+	padding:5px;
+
+}
+.contact-input, .contact-texarea, #select{
+    margin-bottom: 10px;
+    padding: 5px;
+    background: #FFC;
+    border-radius: 4px;
+    width: 90%;
+    border: 1px solid #f93;
+    height: 20px;
+    font-size: 14px;
+    font-family: 'Quando', Helvetica, Arial, sans-serif;
+}
+ 
+#select {
+    width: 94%;
+    height: 30px;
+    /*-webkit-appearance: none;*/
+    color:#937c7c;
+    background:#FFC;
+}
+ 
+.contact-texarea{
+    height: 180px;
+    line-height: 20px;
+    resize: none;
+    font-family: 'Quando', Helvetica, Arial, sans-serif;
+    color:#937c7c;
+}
+ 
+#button {
+    float: right;
+    padding: 0 20px;
+    height: 29px;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #666;
+    background: #ff9;
+    border: 1px solid #f93;
+    border-radius: 10px;
+}
+#map{
+	width:150%;
+}
+#small{
+	width:20%;
+	
+}
+.veerud.yks{width: 6.25%}
+.veerud.kaks{width: 12.5%}
+.veerud.kolm{width: 18.75%}
+.veerud.neli{width: 25%}
+
+.veerud{
+    float: left;
+    margin: auto;
+}
+.veerud img{
+    width: 90%;
+    height: auto;
+    border-radius: 200px;
+}
+.veerud p{
+	padding:5px;
+}
+/* portfoolio*/
+.cats{
+	position:relative;
+	float:left;
+}
+
+/*   -= footer  =-     */
+footer {
+text-align:center;
+background-color:#333;
+text-align:center;
+}
+footer p {
+	line-height: 40px;
+	color:#fff;
+}
+/*   -= Media query  =-     */
+@media only screen and (max-width: 480px) {
+header h1{ 
+	font-size:50px;
+	line-height:60px;
+	padding-top: 10px;
+}
+header h2 {
+	text-transform:uppercase;
+	font-size: 10px;
+	font-weight:90;
+	padding-bottom:10px;
+	
+}
+
+#menu ul li{
+	width:40%;
+}
+#menu ul li a {
+	 
+	font-size: 15px;
+	
+	padding:13px;
+}
+/*kontakt*/
+#left,#right,.new,.new1{
+width:100%; 
+}
+.kontact,#small{
+	width:100%;
+}
+#map{
+	width:100%;
+}
+/*personal*/
+.veerud.yks, .veerud.kaks, .veerud.kolm, .veerud.neli{
+	width: 100%;
+}
+
